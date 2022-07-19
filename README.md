@@ -16,8 +16,8 @@
 ### We can see from the statistical results of the "June" temperature data frame that the mean temperature is not drastically different from the mean temperature of the "December" temperature data frame. However, it is important to note that the count of December temperatures is smaller so there isn't as much data available for December. This gives us an incomplete picture of December temperature data from a statistical standpoint and suggests our average may not be as reliable the June average. This is also indicated by the higher standard deviation of the December data.
 
 
-Two additional queries could be performed to gather precipitation data. There queries would be:
+### Two additional queries could be performed to gather precipitation data. There queries would be:
 
-session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 6) (June)
+### session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 6) (June)
 
-session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 12) (December)
+### session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 12) (December)
